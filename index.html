@@ -62,6 +62,9 @@
         .info h2 {
             color: #d46e96;
         }
+        .map-container {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -74,7 +77,11 @@
             <p>13 декабря, 20:00</p>
             <p>Место: кафе "Романтика", ул. Цветочная, 7</p>
             <p>Ты готова к нашему маленькому приключению?</p>
-            <div id="map"></div>
+            
+            <!-- Кнопка для показа карты -->
+            <div class="map-container">
+                <button class="btn" onclick="showMap()">Показать на карте</button>
+            </div>
         </div>
     </div>
 
@@ -83,16 +90,11 @@
             document.getElementById('info').style.display = 'block';
         }
 
-        // Здесь можно вставить код для карты, если используешь Google Maps API или другой сервис
-        // Например, для карты Google Maps:
-        // function initMap() {
-        //     var map = new google.maps.Map(document.getElementById('map'), {
-        //         center: {lat: 55.7558, lng: 37.6173},
-        //         zoom: 12
-        //     });
-        // }
-
-        // Важно заменить на реальный API-код для карты
+        function showMap() {
+            // Открыть Google Map в новом окне с адресом
+            const mapUrl = 'https://www.google.com/maps?q=Цветочная+ул,+7&hl=ru';
+            window.open(mapUrl, '_blank');
+        }
     </script>
 </body>
 </html>
