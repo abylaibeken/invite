@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магия встречи</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-image: url('https://your-image-url.com'); /* Можно вставить фоновую картинку */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #d46e96; /* Романтичный цвет */
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .btn {
+            background-color: #d46e96; /* Цвет кнопки */
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #f1a0c3;
+            transform: scale(1.1);
+        }
+        .info {
+            display: none;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .info h2 {
+            color: #d46e96;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Магия встречи</h1>
+        <p>Ты заслуживаешь самого лучшего, и я бы хотел пригласить тебя провести незабываемое время со мной. Это приглашение — первый шаг в нашем волшебном путешествии. Готова ли ты?</p>
+        <button class="btn" onclick="showInfo()">Узнать больше</button>
+        <div class="info" id="info">
+            <h2>Место и время встречи:</h2>
+            <p>13 декабря, 20:00</p>
+            <p>Место: кафе "Романтика", ул. Цветочная, 7</p>
+            <p>Ты готова к нашему маленькому приключению?</p>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script>
+        function showInfo() {
+            document.getElementById('info').style.display = 'block';
+        }
+
+        // Здесь можно вставить код для карты, если используешь Google Maps API или другой сервис
+        // Например, для карты Google Maps:
+        // function initMap() {
+        //     var map = new google.maps.Map(document.getElementById('map'), {
+        //         center: {lat: 55.7558, lng: 37.6173},
+        //         zoom: 12
+        //     });
+        // }
+
+        // Важно заменить на реальный API-код для карты
+    </script>
+</body>
+</html>
